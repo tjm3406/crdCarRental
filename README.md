@@ -19,10 +19,10 @@ The Jar file is included in the github repository. The easiest way to run the te
 the IDE I used during this project (IntelliJ).
 
 ## Design
-CarType - enum that can easily support many types of cars. Right now supports SEDAN, SUV, VAN
-Car - An object class to represent a single vehicle. Has a field for a list of its reservations. Has isAvailable method to check for time range overalps
-Reservation - An object class that connects the car, start times, end times, and customer ID
-RentalSystem - The system manager. Adds cars, finds available cars, books/reserves cars, cancels reservations and looks up reservations by ID
+- CarType: enum that can easily support many types of cars. Right now supports SEDAN, SUV, VAN
+- Car: An object class to represent a single vehicle. Has a field for a list of its reservations. Has isAvailable method to check for time range overalps
+- Reservation: An object class that connects the car, start times, end times, and customer ID
+- RentalSystem: The system manager. Adds cars, finds available cars, books/reserves cars, cancels reservations and looks up reservations by ID
 
 ## Key Design Decisions
 - Availability is tracked per car object. This allows the ability to distinguish two non-overlapping bookings from two overlapping bookings.
