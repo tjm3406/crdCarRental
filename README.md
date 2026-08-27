@@ -35,6 +35,7 @@ Simple Junit tests were made to test the overlap algorithm and booking manager.
 ## Limitations
 - Due to time constraints, some methods return null on failure. This is mentioned in the comments and there is a TODO to add exception handling. Exception handling would make scaling and future code easier to write because of constant need to null check.
 - No thread safety, assumes single thread use. If concurrency is needed, then would need to lock around the booking sequence in reserveCar()
+- Cancellation deletes the reservation from the system, this allows for no history should a customer or employee want to look at recently cancelled reservations.
 
 ## Future Work
 - Pricing and/or make/model of car. Would add to car object.
